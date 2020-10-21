@@ -1,6 +1,6 @@
 # 以'#'开始的行，被视为注释.                                                                                                                          
 
-./packages/
-./models/
+/packages
+/models
 
 
