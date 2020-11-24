@@ -43,3 +43,7 @@ nlu:
     - 请问您的血糖是多少
     - 血糖多少
 
+- intent: get_BS
+  examples: |
+   - 我的血糖是[5.4]{"entity":"BS","value":"5.4"}
+

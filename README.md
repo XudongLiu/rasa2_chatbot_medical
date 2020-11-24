@@ -36,7 +36,32 @@ rasa2目前使用pip进行安装
 
 rasa run -m models/20200921-164323.tar.gz --enable-api --cors "*" --debug
 
+**在shell中查看交互过程**
+
+运行custom action：
+
+rasa run actions
+
+运行shell：
+
+rasa shell 
+
 然后就可以进行回答
+
+运行效果如下：
+`Your input ->  你好                                                                                      
+Hey! How are you?`
+`请问您的血糖指数是多少？`
+`Your input ->  我的血糖是5.4                                                                             
+获取到您的血糖为:5.4`
+`Bye`
+
+
+
+11月24日更新
+
+本次从新裁剪了story，可以明确的看到在对话中使用slot和custom action获取用户对话数据。通过custom action可以完成自定义的功能，后续将添加neo4j的数据知识库。
+
 
 
 

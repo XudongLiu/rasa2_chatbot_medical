@@ -10,6 +10,7 @@ intents:
   - bot_challenge
   - ask_for_PD
   - ask_for_BS
+  - get_BS
 
 responses:
   utter_greet:
@@ -36,6 +37,18 @@ responses:
 
   utter_pd:
   - text: "请问您的血压指数是多少？"
+
+entities:
+  - BS
+slots:
+  BS:
+    type: float 
+    min_value: 0.0
+    max_value: 100.0
+
+actions:
+  - action_get_bs
+   
 
 session_config:
   session_expiration_time: 60
